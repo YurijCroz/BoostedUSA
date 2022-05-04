@@ -73,6 +73,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
     margin-right: 0px;
 }
 
+@media (max-width:970px) {
+    .menu__link {
+        display: none;
+    }
+}
+
 .header__icon {
     margin-right: 20.5px;
 }
@@ -86,15 +92,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
 .footer__up-info {
     background: #F7F7F7;
-    padding-top: 50px;
-    height: 329px;
-    display: flex;
-    justify-content: center;
+    padding-top: 40px;
+    min-height: 329px;
 }
 
 .footer__up-wrapp {
-    width: 1200px;
+    max-width: 1440px;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer__up-wrapp h4 {
@@ -106,7 +112,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 }
 
 .evenly {
-    flex: 33.333%;
+    padding: 10px 10px;
+    width: 420px;
 }
 
 .footer__menu-link {
@@ -139,10 +146,24 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 }
 
 .footer__info {
-    height: 70px;
+    min-height: 70px;
+    padding: 0px 130px;
     color: #F7F7F7;
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width:1050px) {
+    .footer__info {
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width:800px) {
+    .footer__info {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .footer__info h5 {
@@ -151,11 +172,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
     font-size: 13px;
     line-height: 19px;
     color: #000000;
-    padding: 19px 0px 0px 130px;
+    padding: 19px 0px 0px 0px;
 }
 
 .icon-container {
-    padding: 21px 130px 0px 0px;
+    padding: 21px 0px 0px 0px;
 }
 
 /*!content */
@@ -190,14 +211,22 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 }
 
 .btn__container {
-    padding-top: 22px;
+    padding-top: 17px;
     width: 414px;
     display: flex;
     justify-content: space-between;
 }
 
+@media (max-width:550px) {
+    .btn__container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 /* !button */
 .btn__first {
+    margin-top: 5px;
     width: 201px;
     height: 33px;
     text-align: center;
@@ -348,7 +377,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 }
 
 .btn__boost {
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 .ad__content {
@@ -502,16 +531,38 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 }
 
 .go-card {
-    height: 308px;
-    padding: 35px 0px;
+    min-height: 308px;
+    padding: 25px 0px;
     background-color: #000000;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+@media (max-width:1096px) {
+    .go-card {
+        padding: 25px 140px;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:875px) {
+    .go-card {
+        padding: 25px 50px;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:843px) {
+    .go-card {
+        padding: 25px 20px;
+        justify-content: space-evenly;
+    }
 }
 
 .go-card__item {
     width: 270px;
-    min-width: 270px;
+    padding: 10px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
