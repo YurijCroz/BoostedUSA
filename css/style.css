@@ -227,6 +227,18 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
     justify-content: space-between;
 }
 
+@media (max-width:1050px) {
+    .brands-logo {
+        padding: 18px 80px 0px;
+    }
+}
+
+@media (max-width:800px) {
+    .brands-logo {
+        padding: 18px 5px 0px;
+    }
+}
+
 .section__looking {
     padding-top: 52px;
     text-align: center;
@@ -261,15 +273,19 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 }
 
 .looking__img-btn-shop {
-    padding: 45px 130px 20px;
+    padding: 35px 0px 10px;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .img-btn-shop {
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 580px;
     width: 580px;
+    margin: 10px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -277,7 +293,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 }
 
 .img-bground1 {
-    margin-right: 20px;
     background-image: url('../images/img-bground1.png');
 }
 
@@ -337,16 +352,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 }
 
 .ad__content {
-    padding: 44px 130px;
+    padding: 34px 0px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .ad__cont-item {
-    margin: 0px 10px;
-    min-width: 380px;
-    min-height: 380px;
-    flex-basis: 33.333%;
+    margin: 10px 10px;
+    width: 380px;
+    height: 380px;
 }
 
 .ad__cont-item h2{
@@ -376,7 +391,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 }
 
 .triple__btn-img-shop {
-    padding-bottom: 55px;
+    padding-bottom: 45px;
     display: flex;
 }
 
@@ -384,12 +399,19 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
     flex: 1 1 auto;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 480px;
     width: 480px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width:1050px) {
+    .triple__btn-img-shop {
+        flex-wrap: wrap;
+    }
 }
 
 .bground-img1 {
@@ -423,10 +445,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 .youtube-content {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .youtube-img {
-    margin: 0px 10px;
+    margin: 10px 10px;
 }
 
 .shop__container {
