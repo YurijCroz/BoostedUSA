@@ -29,12 +29,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
 /*! header */
 
-.header__upLine {
+.header__up-line {
     height: 29px;
     background-color: black;
 }
 
-.header__upLine > p {
+.header__up-line > p {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
